@@ -3,8 +3,9 @@ body{
 }
 
 header {
+    display: block;
     position: fixed;
-    margin: 0;
+    top:0;
     height: 100px;
     width: 100%;
     background: #f06eaa;
@@ -14,12 +15,17 @@ header {
         height: 100%;
         margin: 0 auto;
         
+        .logo:hover{
+            box-shadow: 5px 5px 80px #d30966,  0 0 50px red;
+        }
+        
         .logo{
             position: relative;
             float: left;
             height: 100px;
             width: 100px;
             cursor: pointer;
+            border-radius: 5px;
 
             img{
                 display: block;
@@ -45,7 +51,7 @@ header {
                     padding: 0 10px;
                     display: inline-block;
                     height: 100px;
-                    font-family: Tahoma;
+                    
                     font-size: 18px;
                        
 
@@ -71,8 +77,9 @@ header {
 }
 
 content{
+    display: block;
     margin-top: 100px;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 0;
     
@@ -89,7 +96,12 @@ content{
             color: #d6c5d1;
             font-family: TypoUpright BT;
             font-size: 60px;
-            text-shadow: 5px 5px 5px #555,  0 0 1em red;;
+            text-shadow: 5px 5px 5px #555;
+            cursor: pointer;
+        }
+        
+        h1:hover{
+            text-shadow: 5px 5px 5px #555,  0 0 50px red;
         }
         
         .panel{
@@ -113,6 +125,7 @@ content{
                     width: 20px;
                     background: #fff;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
             }
             
@@ -121,18 +134,65 @@ content{
     
     .row{
         height: 100%;
+        font-family: 'Roboto', sans-serif;
         h1{
             text-align: center;
             color: #b11b60;
         }
         
         p{
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
             text-indent: 30px;
             width: 800px;
             margin: 50px auto;
             color: #b11b60;
         }
         
+    }
+}
+
+footer{
+    overflow: auto;
+    position: relative;
+    display: block;
+    
+    height: 150px;
+    background: #555;
+    
+    .wrap{
+        height: 100px;
+        width: 550px;
+        margin: 30px auto;
+        
+        ul{
+            display: inline-block;
+            margin: 0;
+             list-style-type: none;
+            
+            li:first-child{
+                font-weight:bold;
+            }
+            
+            #adventge a {
+                color: #f2e114;
+            }
+            
+            li{
+                margin: 0;
+                a {
+                    font-size: 12px;
+                    text-decoration: none;
+                    color: #fff;
+                }
+                
+                a:hover{
+                    text-decoration: underline;
+                }
+                
+                
+            }
+        }
     }
 }
 
