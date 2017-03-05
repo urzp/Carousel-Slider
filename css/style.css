@@ -14,6 +14,7 @@ header {
     height: 100%;
     margin: 0 auto; }
     header .heder_wrap .logo:hover {
+      transition-duration: 1s;
       box-shadow: 5px 5px 80px #d30966,  0 0 50px red; }
     header .heder_wrap .logo {
       position: relative;
@@ -40,6 +41,7 @@ header {
           padding: 0 10px;
           display: inline-block;
           height: 100px;
+          transition-duration: 1s;
           font-size: 18px; }
           header .heder_wrap nav ul li a {
             display: block;
@@ -56,9 +58,11 @@ content {
   position: relative;
   width: 100%;
   z-index: 0; }
-  content .photocarusel img {
-    display: block;
-    width: 100%; }
+  content .photocarusel .wrap_img {
+    height: 100%; }
+    content .photocarusel .wrap_img img {
+      display: none;
+      width: 100%; }
   content .photocarusel h1 {
     position: absolute;
     left: 100px;
@@ -68,6 +72,7 @@ content {
     text-shadow: 5px 5px 5px #555;
     cursor: pointer; }
   content .photocarusel h1:hover {
+    transition-duration: 1s;
     text-shadow: 5px 5px 5px #555,  0 0 50px red; }
   content .photocarusel .panel {
     height: 50px;
@@ -75,9 +80,10 @@ content {
     content .photocarusel .panel .controls {
       margin: 0 auto;
       width: 150px;
-      height: 50px; }
-      content .photocarusel .panel .controls div:first-child {
-        background: #7b0046; }
+      height: 50px;
+      /*div:first-child{
+          background: #7b0046;
+      }*/ }
       content .photocarusel .panel .controls div {
         margin-top: 15px;
         margin-left: 15px;

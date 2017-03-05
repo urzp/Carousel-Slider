@@ -16,6 +16,7 @@ header {
         margin: 0 auto;
         
         .logo:hover{
+            transition-duration: 1s;
             box-shadow: 5px 5px 80px #d30966,  0 0 50px red;
         }
         
@@ -32,6 +33,7 @@ header {
                 margin: 10px auto;
                 height: 80px;
                 width: 80px;
+                
             }
         }
 
@@ -51,7 +53,7 @@ header {
                     padding: 0 10px;
                     display: inline-block;
                     height: 100px;
-                    
+                    transition-duration: 1s;
                     font-size: 18px;
                        
 
@@ -85,10 +87,19 @@ content{
     
     .photocarusel{
         
-        img{
-            display: block;
-            width: 100%;
+        .wrap_img{
+            height: 100%;
+            
+            img{
+                display: none;
+                width: 100%;
+            }
+            
+
+            
         }
+        
+
         
         h1{
             position: absolute;
@@ -101,6 +112,7 @@ content{
         }
         
         h1:hover{
+            transition-duration: 1s;
             text-shadow: 5px 5px 5px #555,  0 0 50px red;
         }
         
@@ -113,9 +125,9 @@ content{
                 width: 150px;
                 height: 50px;
                 
-                div:first-child{
+                /*div:first-child{
                     background: #7b0046;
-                }
+                }*/
                 
                 div{
                     margin-top: 15px; 
