@@ -6,7 +6,8 @@ header {
   margin: 0;
   height: 100px;
   width: 100%;
-  background: #f06eaa; }
+  background: #f06eaa;
+  z-index: 1; }
   header .heder_wrap {
     width: 700px;
     height: 100%;
@@ -45,5 +46,48 @@ header {
             text-transform: capitalize; }
         header .heder_wrap nav ul li:hover {
           background: #ec008c; }
+
+content {
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 0; }
+  content .photocarusel img {
+    display: block;
+    width: 100%; }
+  content .photocarusel h1 {
+    position: absolute;
+    left: 100px;
+    color: #d6c5d1;
+    font-family: TypoUpright BT;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px #555,  0 0 1em red; }
+  content .photocarusel .panel {
+    height: 50px;
+    background: #f06eaa; }
+    content .photocarusel .panel .controls {
+      margin: 0 auto;
+      width: 150px;
+      height: 50px; }
+      content .photocarusel .panel .controls div:first-child {
+        background: #7b0046; }
+      content .photocarusel .panel .controls div {
+        margin-top: 15px;
+        margin-left: 15px;
+        float: left;
+        height: 20px;
+        width: 20px;
+        background: #fff;
+        border-radius: 50%; }
+  content .row {
+    height: 100%; }
+    content .row h1 {
+      text-align: center;
+      color: #b11b60; }
+    content .row p {
+      text-indent: 30px;
+      width: 800px;
+      margin: 50px auto;
+      color: #b11b60; }
 
 /*# sourceMappingURL=style.css.map */
