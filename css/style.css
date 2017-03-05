@@ -1,0 +1,49 @@
+body {
+  margin: 0; }
+
+header {
+  position: fixed;
+  margin: 0;
+  height: 100px;
+  width: 100%;
+  background: #f06eaa; }
+  header .heder_wrap {
+    width: 700px;
+    height: 100%;
+    margin: 0 auto; }
+    header .heder_wrap .logo {
+      position: relative;
+      float: left;
+      height: 100px;
+      width: 100px;
+      cursor: pointer; }
+      header .heder_wrap .logo img {
+        display: block;
+        margin: 10px auto;
+        height: 80px;
+        width: 80px; }
+    header .heder_wrap nav {
+      position: relative;
+      display: block;
+      float: left;
+      height: 100px;
+      width: 600px; }
+      header .heder_wrap nav ul {
+        margin: 0; }
+        header .heder_wrap nav ul li {
+          margin: 0 10px;
+          padding: 0 10px;
+          display: inline-block;
+          height: 100px;
+          font-family: Tahoma;
+          font-size: 18px; }
+          header .heder_wrap nav ul li a {
+            display: block;
+            margin-top: 40px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize; }
+        header .heder_wrap nav ul li:hover {
+          background: #ec008c; }
+
+/*# sourceMappingURL=style.css.map */
