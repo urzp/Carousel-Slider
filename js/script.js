@@ -16,8 +16,9 @@ function contr_img(){
    $(".controls").on('click',"div",function(){
        $(".controls div").css("background","#fff")
        $(this).css("background", "#7b0046");
+       /*$($(".wrap_img img").get(4)).css("display","none");*/
        
-       $( $(".wrap_img img").get(0)).effect( "drop", "left","slow" );
+       $( $(".wrap_img img").get(4)).effect( "drop", "left","slow" );
        
    }) ;        
 }
@@ -30,7 +31,7 @@ $('document').ready(function(){
     create_controls();
     contr_img()
     
-   /*$($(".wrap_img img").get(0)).css("display","block"); */
+   /* $($(".wrap_img img").get(0)).css("display","block"); */
     
 
    

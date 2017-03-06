@@ -8,7 +8,7 @@ header {
   height: 100px;
   width: 100%;
   background: #f06eaa;
-  z-index: 1; }
+  z-index: 2; }
   header .heder_wrap {
     width: 700px;
     height: 100%;
@@ -55,25 +55,29 @@ header {
 content {
   display: block;
   margin-top: 100px;
-  position: relative;
   width: 100%;
   z-index: 0; }
   content .photocarusel .wrap_img {
     height: 100%; }
     content .photocarusel .wrap_img img {
+      margin-top: -530px;
+      position: absolute;
       width: 100%; }
   content .photocarusel h1 {
     position: absolute;
     left: 100px;
+    top: 100px;
     color: #d6c5d1;
-    font-family: TypoUpright BT;
+    font-family: 'Rochester', cursive;
     font-size: 60px;
     text-shadow: 5px 5px 5px #555;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 1; }
   content .photocarusel h1:hover {
     transition-duration: 1s;
     text-shadow: 5px 5px 5px #555,  0 0 50px red; }
   content .photocarusel .panel {
+    margin-top: 600px;
     height: 50px;
     background: #f06eaa; }
     content .photocarusel .panel .controls {
