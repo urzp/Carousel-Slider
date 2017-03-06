@@ -30,6 +30,7 @@ header {
             border-radius: 5px;
 
             img{
+                
                 display: block;
                 margin: 10px auto;
                 height: 80px;
@@ -97,6 +98,7 @@ content{
                 margin-top: -530px;
                 position: absolute;
                 width: 100%;
+                display: none;
             }
             
         }

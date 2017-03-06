@@ -1,3 +1,5 @@
+
+
 function create_controls(){
     
    $(".wrap_img").after("<div class='panel'></div>");
@@ -12,13 +14,33 @@ function create_controls(){
     
 };
 
+
+function get_visible_img(){
+    for (var i=0; i<$(".wrap_img img").length; i++){
+         if ("block"==$($(".wrap_img img").get(i)).css("display")){
+             return i;
+         };   
+    }
+}
+
+
 function contr_img(){
-   $(".controls").on('click',"div",function(){
-       $(".controls div").css("background","#fff")
-       $(this).css("background", "#7b0046");
-       /*$($(".wrap_img img").get(4)).css("display","none");*/
+    $(".controls").on('click',"div",function(){
+        $(".controls div").css("background","#fff")
+        $(this).css("background", "#7b0046");
+
+        var index = get_visible_img();
+
+        if ( get_visible_img() >= $(".wrap_img img").length-1 ){
+            $( $(".wrap_img img").get( 0 ) ).show( "drop", {direction: "right"},500); 
+            $( $(".wrap_img img").get( index ) ).effect( "drop",500 ); 
+        }else{
+            $( $(".wrap_img img").get( index + 1 ) ).show( "drop", {direction: "right"},500);
+            $( $(".wrap_img img").get( index ) ).effect( "drop",500 );  
+            
+        }
        
-       $( $(".wrap_img img").get(4)).effect( "drop", "left","slow" );
+
        
    }) ;        
 }
@@ -31,7 +53,7 @@ $('document').ready(function(){
     create_controls();
     contr_img()
     
-   /* $($(".wrap_img img").get(0)).css("display","block"); */
+    $($(".wrap_img img").get(0)).css("display","block"); 
     
 
    

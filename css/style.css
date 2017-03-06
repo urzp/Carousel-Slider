@@ -62,7 +62,8 @@ content {
     content .photocarusel .wrap_img img {
       margin-top: -530px;
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      display: none; }
   content .photocarusel h1 {
     position: absolute;
     left: 100px;
