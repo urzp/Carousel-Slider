@@ -61,7 +61,6 @@ content {
   content .photocarusel .wrap_img {
     height: 100%; }
     content .photocarusel .wrap_img img {
-      display: none;
       width: 100%; }
   content .photocarusel h1 {
     position: absolute;

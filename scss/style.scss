@@ -15,6 +15,7 @@ header {
         height: 100%;
         margin: 0 auto;
         
+        
         .logo:hover{
             transition-duration: 1s;
             box-shadow: 5px 5px 80px #d30966,  0 0 50px red;
@@ -85,13 +86,14 @@ content{
     width: 100%;
     z-index: 0;
     
+    
     .photocarusel{
         
         .wrap_img{
             height: 100%;
             
             img{
-                display: none;
+               
                 width: 100%;
             }
             
@@ -117,6 +119,7 @@ content{
         }
         
         .panel{
+
             height: 50px;
             background: #f06eaa;
           
