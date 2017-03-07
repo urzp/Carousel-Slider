@@ -2,7 +2,8 @@
 
 function create_controls(){
     
-   $(".wrap_img").after("<div class='panel'></div>");
+
+    $(".img_solid").after("<div class='panel'></div>");
     $(".panel").append("<div class='controls'></div>"); 
     
     var count_img = $(".wrap_img img").length;
@@ -67,13 +68,11 @@ $('document').ready(function(){
      
     create_controls();
     set_img();
-    
-    
-    
+
     $($(".wrap_img img").get(0)).css("display","block"); 
     
     next_img();
-    //set_indicator();
+    set_indicator();
     
     
 })
