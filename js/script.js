@@ -26,21 +26,32 @@ function get_visible_img(){
 function next_img(){
     $(".wrap_img").on("click", function(){
         var index = get_visible_img();
-        
-        if ( get_visible_img() >= $(".wrap_img img").length-1 ){
+        if ( index >= $(".wrap_img img").length-1 ){
             $( $(".wrap_img img").get( 0 ) ).show( "drop", {direction: "right"},500); 
             $( $(".wrap_img img").get( index ) ).effect( "drop",500 ); 
+            set_indicator(0);
         }else{
+            
             $( $(".wrap_img img").get( index + 1 ) ).show( "drop", {direction: "right"},500);
             $( $(".wrap_img img").get( index ) ).effect( "drop",500 );  
+            set_indicator(index + 1);
         }
+        
+        
     });
+    
 }
+
+function set_indicator(index){
+    index = "#"+index;
+    $(".controls div").css("background","#fff");
+    $(index).css("background", "#7b0046");  
+};
 
 
 function contr_img(){
     $(".controls").on('click',"div",function(){
-        $(".controls div").css("background","#fff")
+        $(".controls div").css("background","#fff");
         $(this).css("background", "#7b0046");     
    }) ;        
 }
@@ -57,8 +68,8 @@ $('document').ready(function(){
     
     $($(".wrap_img img").get(0)).css("display","block"); 
     
-     next_img();
-   
+    next_img();
+    //set_indicator();
     
     
 })
