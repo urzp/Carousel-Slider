@@ -65,13 +65,34 @@ content {
       width: 100%;
       display: none; }
   content .photocarusel .img_solid {
-    height: 100%;
-    width: 100%; }
-    content .photocarusel .img_solid img {
-      display: block;
-      visibility: hidden;
-      position: static;
-      width: 100%; }
+    position: relative;
+    width: 100%;
+    visibility: hidden; }
+  content .photocarusel .img_solid:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; }
+  content .photocarusel #left_button, content .photocarusel #right_button {
+    transition: 2s;
+    position: absolute;
+    width: 15%;
+    cursor: pointer; }
+    content .photocarusel #left_button .glyphicon, content .photocarusel #right_button .glyphicon {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      color: #f28ac2;
+      font-size: 60px;
+      text-shadow: 5px 5px 5px #3e3030,  0 0 20px #ea00d8; }
+  content .photocarusel #right_button {
+    right: 0; }
+  content .photocarusel #left_button:hover, content .photocarusel #right_button:hover {
+    transition: 2s;
+    background: rgba(244, 15, 208, 0.2); }
+  content .photocarusel #left_button:before, content .photocarusel #right_button:before {
+    content: "";
+    display: block;
+    padding-top: 375%; }
   content .photocarusel h1 {
     position: absolute;
     left: 100px;

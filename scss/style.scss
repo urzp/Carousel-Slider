@@ -101,20 +101,57 @@ content{
                 position: absolute;
                 width: 100%;
                 display: none;
+                
             }  
         }
         
-
+        
         .img_solid {
-            height: 100%;
-            width: 100%;
-            img{
-                display: block;
+             	position: relative;
+	            width: 100%;
                 visibility: hidden;
-                position:static;
-                width: 100%;
+            
+        }
+        
+        .img_solid:before{
+            	content: "";
+	            display: block;
+	            padding-top: 56.25%; 	
+        }
+        
+        
+        
+        #left_button, #right_button{
+            transition: 2s;
+            position: absolute;
+            width: 15%;
+            cursor: pointer;
+            .glyphicon{
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                color: #f28ac2;
+                font-size: 60px;
+                text-shadow: 5px 5px 5px #3e3030,  0 0 20px #ea00d8;
             }
         }
+        
+        #right_button{
+            right: 0;
+        }
+        
+        #left_button:hover, #right_button:hover{
+            transition: 2s;
+            background: rgba(244, 15, 208, 0.2);
+        }
+        
+        #left_button:before, #right_button:before{
+            content: "";
+            display: block;
+            padding-top: 375%; 	
+        }
+        
+
         
         h1{
             position: absolute;
