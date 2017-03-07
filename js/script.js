@@ -49,8 +49,12 @@ function set_indicator(index){
 };
 
 
-function contr_img(){
+function set_img(){
     $(".controls").on('click',"div",function(){
+        var new_index = $(this).attr("id");
+        var old_index = get_visible_img();
+        $( $(".wrap_img img").get(new_index) ).show( "drop", {direction: "right"},500);
+        $( $(".wrap_img img").get(old_index) ).effect( "drop",500 );  
         $(".controls div").css("background","#fff");
         $(this).css("background", "#7b0046");     
    }) ;        
@@ -62,7 +66,7 @@ function contr_img(){
 $('document').ready(function(){
      
     create_controls();
-    contr_img();
+    set_img();
     
     
     
